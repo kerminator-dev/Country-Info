@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ef14f119-92bc-40c0-aef5-febaf0bcbbc5": {
+      "ProjectGuid": "ef14f119-92bc-40c0-aef5-febaf0bcbbc5",
+      "DisplayName": "CountriesWebAPI",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "919fd655-f067-4ba2-b932-d926e85dd6b4": {
+      "ProjectGuid": "919fd655-f067-4ba2-b932-d926e85dd6b4",
+      "DisplayName": "Документы скриптов",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
