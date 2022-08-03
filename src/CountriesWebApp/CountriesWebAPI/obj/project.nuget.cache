@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bme0PLSqeI/ie/aXbjLRnb2xj52lxpvMHFH8e9f0+a681NXS3DB1p8P6tHxTqtnDrSvN3wpyBgAbh3AYgghxEw==",
+  "dgSpecHash": "ScytttKQQLAUekYO8eo9q0RtgljmzjNaexGqHsrlROLUpt3n0aDrP/zHITdNGTvkp9x/P0UECU1obuPuSFONBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\525.khokhlovns\\source\\repos\\CountriesWebApp\\CountriesWebAPI\\CountriesWebAPI.csproj",
+  "projectFilePath": "C:\\Users\\525.khokhlovns\\source\\repos\\clones\\Country-Info-API\\src\\CountriesWebApp\\CountriesWebAPI\\CountriesWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\525.khokhlovns\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\525.khokhlovns\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.7\\microsoft.data.sqlite.core.6.0.7.nupkg.sha512",

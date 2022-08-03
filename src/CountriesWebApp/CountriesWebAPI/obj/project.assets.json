@@ -1575,11 +1575,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\525.khokhlovns\\source\\repos\\CountriesWebApp\\CountriesWebAPI\\CountriesWebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\525.khokhlovns\\source\\repos\\clones\\Country-Info-API\\src\\CountriesWebApp\\CountriesWebAPI\\CountriesWebAPI.csproj",
       "projectName": "CountriesWebAPI",
-      "projectPath": "C:\\Users\\525.khokhlovns\\source\\repos\\CountriesWebApp\\CountriesWebAPI\\CountriesWebAPI.csproj",
+      "projectPath": "C:\\Users\\525.khokhlovns\\source\\repos\\clones\\Country-Info-API\\src\\CountriesWebApp\\CountriesWebAPI\\CountriesWebAPI.csproj",
       "packagesPath": "C:\\Users\\525.khokhlovns\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\525.khokhlovns\\source\\repos\\CountriesWebApp\\CountriesWebAPI\\obj\\",
+      "outputPath": "C:\\Users\\525.khokhlovns\\source\\repos\\clones\\Country-Info-API\\src\\CountriesWebApp\\CountriesWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\525.khokhlovns\\AppData\\Roaming\\NuGet\\NuGet.Config",
