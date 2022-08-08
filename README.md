@@ -83,3 +83,29 @@
       public int StateId { get; set; }
   }
   ```
+  
+## Пример использования:
+```cs
+using CountryInfoAPILibrary;
+
+CountryInfoAPI API = new CountryInfoAPI
+(
+    baseServerAddress: "https://localhost:####/",
+    apiKey: String.Empty
+);
+
+Console.Write("Введите код телефона: ");
+
+if (int.TryParse(Console.ReadLine(), out int phoneCode)
+{
+  var country = API.Countries.GetByPhoneCode(phoneCode).Result;
+  
+  if (country == null)
+  {
+    Console.WriteLine("Нет данных");
+    return;
+  }
+  
+  Console.WriteLine($"Страна: {country.Name}(country.ShortName)");
+}
+```
