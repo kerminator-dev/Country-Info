@@ -1,0 +1,12 @@
+D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\CountryInfoAPILibrary\bin\Release\net6.0\CountryInfoAPILibrary.deps.json
+D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\CountryInfoAPILibrary\bin\Release\net6.0\CountryInfoAPILibrary.dll
+D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\CountryInfoAPILibrary\bin\Release\net6.0\ref\CountryInfoAPILibrary.dll
+D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\CountryInfoAPILibrary\bin\Release\net6.0\CountryInfoAPILibrary.pdb
+D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\CountryInfoAPILibrary\obj\Release\net6.0\CountryInfoAPILibrary.csproj.AssemblyReference.cache
+D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\CountryInfoAPILibrary\obj\Release\net6.0\CountryInfoAPILibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\CountryInfoAPILibrary\obj\Release\net6.0\CountryInfoAPILibrary.AssemblyInfoInputs.cache
+D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\CountryInfoAPILibrary\obj\Release\net6.0\CountryInfoAPILibrary.AssemblyInfo.cs
+D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\CountryInfoAPILibrary\obj\Release\net6.0\CountryInfoAPILibrary.csproj.CoreCompileInputs.cache
+D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\CountryInfoAPILibrary\obj\Release\net6.0\CountryInfoAPILibrary.dll
+D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\CountryInfoAPILibrary\obj\Release\net6.0\ref\CountryInfoAPILibrary.dll
+D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\CountryInfoAPILibrary\obj\Release\net6.0\CountryInfoAPILibrary.pdb

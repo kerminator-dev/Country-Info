@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "344e7b33-cfdc-4197-bef9-c6c19f69bd66": {
+      "ProjectGuid": "344e7b33-cfdc-4197-bef9-c6c19f69bd66",
+      "DisplayName": "CountryInfoAPI",
+      "ColorIndex": 0
+    },
+    "0ba11f36-f93a-4577-bfae-91e369a85087": {
+      "ProjectGuid": "0ba11f36-f93a-4577-bfae-91e369a85087",
+      "DisplayName": "CountryInfoAPILibrary",
+      "ColorIndex": 1
+    },
+    "37b74aa1-1126-4f26-913a-89ca286e673f": {
+      "ProjectGuid": "37b74aa1-1126-4f26-913a-89ca286e673f",
+      "DisplayName": "ConsoleClient",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

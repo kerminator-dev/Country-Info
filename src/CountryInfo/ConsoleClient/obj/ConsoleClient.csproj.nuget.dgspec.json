@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Users\\525.khokhlovns\\Desktop\\Новая папка\\CountryInfo\\ConsoleClient\\ConsoleClient.csproj": {}
+  },
+  "projects": {
+    "D:\\Users\\525.khokhlovns\\Desktop\\Новая папка\\CountryInfo\\ConsoleClient\\ConsoleClient.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\525.khokhlovns\\Desktop\\Новая папка\\CountryInfo\\ConsoleClient\\ConsoleClient.csproj",
+        "projectName": "ConsoleClient",
+        "projectPath": "D:\\Users\\525.khokhlovns\\Desktop\\Новая папка\\CountryInfo\\ConsoleClient\\ConsoleClient.csproj",
+        "packagesPath": "C:\\Users\\525.khokhlovns\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\525.khokhlovns\\Desktop\\Новая папка\\CountryInfo\\ConsoleClient\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\525.khokhlovns\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Users\\525.khokhlovns\\Desktop\\Новая папка\\CountryInfo\\CountryInfoAPILibrary\\CountryInfoAPILibrary.csproj": {
+                "projectPath": "D:\\Users\\525.khokhlovns\\Desktop\\Новая папка\\CountryInfo\\CountryInfoAPILibrary\\CountryInfoAPILibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Users\\525.khokhlovns\\Desktop\\Новая папка\\CountryInfo\\CountryInfoAPILibrary\\CountryInfoAPILibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\525.khokhlovns\\Desktop\\Новая папка\\CountryInfo\\CountryInfoAPILibrary\\CountryInfoAPILibrary.csproj",
+        "projectName": "CountryInfoAPILibrary",
+        "projectPath": "D:\\Users\\525.khokhlovns\\Desktop\\Новая папка\\CountryInfo\\CountryInfoAPILibrary\\CountryInfoAPILibrary.csproj",
+        "packagesPath": "C:\\Users\\525.khokhlovns\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\525.khokhlovns\\Desktop\\Новая папка\\CountryInfo\\CountryInfoAPILibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\525.khokhlovns\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

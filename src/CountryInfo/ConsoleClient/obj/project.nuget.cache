@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TjXVTni1+1OvO6iQsNCdAG3eJ6lrIWA/R68oZHIrS+gR4H0I81KQ9Vq8RS4oBN4f0d5wDisgnUU31T08sfIImg==",
+  "success": true,
+  "projectFilePath": "D:\\Users\\525.khokhlovns\\Desktop\\Новая папка\\CountryInfo\\ConsoleClient\\ConsoleClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\525.khokhlovns\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
