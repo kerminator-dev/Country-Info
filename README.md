@@ -26,3 +26,60 @@
   - /api/Cities/All                         - список всех городов
   - /api/Cities/Detail/{city_id}            - детальные данные о городе с id {city_id}
   - /api.Cities/Count                       - общее количество городов
+
+## Сущности
+- Модели:
+  - Страна:
+  ```cs
+  public class Country
+  {
+      [Key]
+      [JsonProperty("id")]
+      public int Id { get; set; }
+
+      [JsonProperty("shortName")]
+      public string ShortName { get; set; }
+
+      [JsonProperty("name")]
+      public string Name { get; set; }
+
+      [JsonProperty("phoneCode")]
+      public int PhoneCode { get; set; }
+
+      [JsonProperty("states")]
+      public virtual ICollection<State> States { get; set; }
+  }
+  ```
+  - Регион:
+  ```cs
+  public class State
+  {
+      [Key]
+      [JsonProperty("id")]
+      public int Id { get; set; }
+
+      [JsonProperty("name")]
+      public string Name { get; set; }
+
+      [JsonProperty("countryId")]
+      public int CountryId { get; set; }
+
+      [JsonProperty("cities")]
+      public virtual ICollection<City> Cities { get; set; }
+  }
+  ```
+  - Город:
+  ```cs
+  public class City
+  {
+      [Key]
+      [JsonProperty("id")]
+      public int Id { get; set; }
+
+      [JsonProperty("name")]
+      public string Name { get; set; }
+
+      [JsonProperty("stateId")]
+      public int StateId { get; set; }
+  }
+  ```
