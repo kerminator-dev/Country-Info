@@ -98,14 +98,15 @@ Console.Write("Введите код телефона: ");
 
 if (int.TryParse(Console.ReadLine(), out int phoneCode)
 {
-  var country = API.Countries.GetByPhoneCode(phoneCode).Result;
+  var countries = API.Countries.GetByPhoneCode(phoneCode).Result;
   
-  if (country == null)
+  if (countries == null)
   {
     Console.WriteLine("Нет данных");
     return;
   }
   
-  Console.WriteLine($"Страна: {country.Name}(country.ShortName)");
+  foreach (var country in countries)
+    Console.WriteLine($"Страна: {country.Name}(country.ShortName)");
 }
 ```
