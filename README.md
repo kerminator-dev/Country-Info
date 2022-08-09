@@ -27,9 +27,8 @@
   - /api/Cities/Detail/{city_id}            - детальные данные о городе с id {city_id}
   - /api.Cities/Count                       - общее количество городов
 
-## Сущности
-- Модели:
-  - Страна:
+## Модели:
+Страна:
   ```cs
   public class Country
   {
@@ -50,7 +49,7 @@
       public virtual ICollection<State> States { get; set; }
   }
   ```
-  - Регион:
+Регион:
   ```cs
   public class State
   {
@@ -68,7 +67,7 @@
       public virtual ICollection<City> Cities { get; set; }
   }
   ```
-  - Город:
+Город:
   ```cs
   public class City
   {
