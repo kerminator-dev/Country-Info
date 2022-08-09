@@ -1,9 +1,9 @@
 # Country Info
 
 ## Репозиторий включает:
-- <a href="https://github.com/kerminator-dev/Country-Info/tree/main/src/CountryInfo/CountryInfoAPI">ASP.NET Core 6 Country Info WEB API</a>
+- <a href="https://github.com/kerminator-dev/Country-Info/tree/main/src/CountryInfo/CountryInfoAPI">ASP.NET Core 6 Country Info API</a>
 - <a href="https://github.com/kerminator-dev/Country-Info/tree/main/src/CountryInfo/CountryInfoAPILibrary">Библиотека классов для удобного взаимодействия с Country Info API</a>
-- <a href="https://github.com/kerminator-dev/Country-Info/tree/main/src/CountryInfo/ConsoleClient">Тестовый консольный клиент</a>
+- <a href="https://github.com/kerminator-dev/Country-Info/tree/main/src/CountryInfo/ConsoleClient">Консольный клиент, использующий библиотеку классов</a>
 
 ## Country Info API - API-интерфейс, предоставляющий данные о:
 - Странах (Countries)
@@ -25,7 +25,7 @@
 - Данные о городах
   - /api/Cities/All                         - список всех городов
   - /api/Cities/Detail/{city_id}            - детальные данные о городе с id {city_id}
-  - /api.Cities/Count                       - общее количество городов
+  - /api/Cities/Count                       - общее количество городов
 
 ## Модели:
 Страна:
