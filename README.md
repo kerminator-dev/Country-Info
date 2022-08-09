@@ -87,10 +87,12 @@
 ## Пример использования:
 ```cs
 using CountryInfoAPILibrary;
+using CountryInfoAPILibrary.Models;
 
-CountryInfoAPI API = new CountryInfoAPI
+// Инициализация 
+var api = new CountryInfoAPI
 (
-    baseServerAddress: "https://localhost:####/",
+    baseServerAddress: "https://localhost:7046/",
     apiKey: String.Empty
 );
 
@@ -98,15 +100,22 @@ Console.Write("Введите код телефона: ");
 
 if (int.TryParse(Console.ReadLine(), out int phoneCode))
 {
-  var countries = API.Countries.GetByPhoneCode(phoneCode).Result;
-  
-  if (countries == null)
-  {
-    Console.WriteLine("Нет данных");
-    return;
-  }
-  
-  foreach (var country in countries)
-    Console.WriteLine($"Страна с кодом +{phoneCode}: {country.Name}(country.ShortName)");
+    // Обращение к API-методу /api/Countries/PhoneCode/{phoneCode} 
+    // и получение результата - списка стран с указанным кодом телефона
+    Responce<IReadOnlyList<Country>> responce = api.Countries.GetByPhoneCode(phoneCode);
+
+    if (responce.HasResult)
+    {
+        // Вывод списка полученных стран с указанным кодом телефона
+        foreach (var country in responce.Result)
+            Console.WriteLine($"Страна с кодом +{phoneCode}: {country.Name} ({country.ShortName})");
+    }
+    else
+    {
+        Console.WriteLine("Нет данных");
+        return;
+    }
 }
+
+Console.Read();
 ```
