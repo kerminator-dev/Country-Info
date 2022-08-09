@@ -96,7 +96,7 @@ CountryInfoAPI API = new CountryInfoAPI
 
 Console.Write("Введите код телефона: ");
 
-if (int.TryParse(Console.ReadLine(), out int phoneCode)
+if (int.TryParse(Console.ReadLine(), out int phoneCode))
 {
   var countries = API.Countries.GetByPhoneCode(phoneCode).Result;
   
@@ -107,6 +107,6 @@ if (int.TryParse(Console.ReadLine(), out int phoneCode)
   }
   
   foreach (var country in countries)
-    Console.WriteLine($"Страна: {country.Name}(country.ShortName)");
+    Console.WriteLine($"Страна с кодом +{phoneCode}: {country.Name}(country.ShortName)");
 }
 ```
