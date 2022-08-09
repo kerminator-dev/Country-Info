@@ -119,3 +119,4 @@ if (int.TryParse(Console.ReadLine(), out int phoneCode))
 
 Console.Read();
 ```
+![alt text](https://github.com/kerminator-dev/Country-Info/blob/main/img/console-example.PNG?raw=true)
