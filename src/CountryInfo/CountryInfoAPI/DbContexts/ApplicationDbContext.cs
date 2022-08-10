@@ -1,4 +1,4 @@
-﻿using CountryInfoAPI.Models;
+﻿using CountryInfoAPI.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace CountryInfoAPI.DbContexts

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CountryInfoAPI.Models
+namespace CountryInfoAPI.Entities
 {
     /// <summary>
     /// Страна

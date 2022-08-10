@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CountryInfoAPI.Models
+namespace CountryInfoAPI.Entities
 {
     /// <summary>
-    /// Город
+    /// Штат/регион страны
     /// </summary>
-    public class City
+    public class State
     {
         [Key]
         [Column("id", Order = 0)]
@@ -15,7 +15,9 @@ namespace CountryInfoAPI.Models
         [Column("name", Order = 1)]
         public string Name { get; set; }
 
-        [Column("state_id", Order = 2)]
-        public int StateId { get; set; }
+        [Column("country_id", Order = 2)]
+        public int CountryId { get; set; }
+
+        public virtual ICollection<City> Cities { get; set; }
     }
 }
