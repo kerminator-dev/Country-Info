@@ -5,12 +5,16 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryInfoAPI", "CountryInfoAPI\CountryInfoAPI.csproj", "{344E7B33-CFDC-4197-BEF9-C6C19F69BD66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryInfoAPILibrary", "CountryInfoAPILibrary\CountryInfoAPILibrary.csproj", "{0BA11F36-F93A-4577-BFAE-91E369A85087}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryInfoAPILibrary", "CountryInfoAPILibrary\CountryInfoAPILibrary.csproj", "{0BA11F36-F93A-4577-BFAE-91E369A85087}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{37B74AA1-1126-4F26-913A-89CA286E673F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{37B74AA1-1126-4F26-913A-89CA286E673F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{0BA11F36-F93A-4577-BFAE-91E369A85087} = {0BA11F36-F93A-4577-BFAE-91E369A85087}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryInfo.WebAPI", "CountryInfo.WebAPI\CountryInfo.WebAPI.csproj", "{5EE140AB-8284-47A8-9A45-2BD4D4A791AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryInfo.Shared", "CountryInfo.Shared\CountryInfo.Shared.csproj", "{0B51C3DE-B8D4-4A33-AB93-13C305CE461D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +34,14 @@ Global
 		{37B74AA1-1126-4F26-913A-89CA286E673F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37B74AA1-1126-4F26-913A-89CA286E673F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37B74AA1-1126-4F26-913A-89CA286E673F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EE140AB-8284-47A8-9A45-2BD4D4A791AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE140AB-8284-47A8-9A45-2BD4D4A791AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE140AB-8284-47A8-9A45-2BD4D4A791AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE140AB-8284-47A8-9A45-2BD4D4A791AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B51C3DE-B8D4-4A33-AB93-13C305CE461D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B51C3DE-B8D4-4A33-AB93-13C305CE461D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B51C3DE-B8D4-4A33-AB93-13C305CE461D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B51C3DE-B8D4-4A33-AB93-13C305CE461D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
