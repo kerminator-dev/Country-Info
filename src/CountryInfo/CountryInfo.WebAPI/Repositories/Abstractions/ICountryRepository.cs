@@ -2,12 +2,8 @@
 
 namespace CountryInfo.WebAPI.Repositories.Abstractions
 {
-    public interface ICountryRepository
+    public interface ICountryRepository : IRepository<Country, int>
     {
-        Task<Country> GetAsync(int id);
-        Task<IEnumerable<Country>> GetAllAsync();
-        Task CreateAsync(Country country);
-        Task DeleteAsync(Country country);
-        Task UpdateAsync(Country country);
+        Task LoadStatesAsync(Country country);
     }
 }

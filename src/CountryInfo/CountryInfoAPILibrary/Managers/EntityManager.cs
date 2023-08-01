@@ -7,12 +7,10 @@ namespace CountryInfoAPILibrary.Managers
     public abstract class EntityManager<T> where T : class
     {
         protected readonly string _baseServerAddress;   // Адрес хоста
-        protected readonly string _apiKey;              // API-ключ, пока что не нужен
         protected readonly string _controllerName;      // Название API-Controller'а (например, Cities - https://localhost:xxxx/api/Cities/
 
-        public EntityManager(string baseServerAddress, string apiKey, string controllerName)
+        public EntityManager(string baseServerAddress, string controllerName)
         {
-            _apiKey = apiKey;
             _baseServerAddress = baseServerAddress;
             _controllerName = controllerName;
         }

@@ -1,6 +1,8 @@
 ﻿using CountryInfo.WebAPI.Data;
 using CountryInfo.WebAPI.Entities;
 using CountryInfo.WebAPI.Repositories.Abstractions;
+using CountryInfo.WebAPI.Specifications.Abstractions;
+using Microsoft.EntityFrameworkCore;
 
 namespace CountryInfo.WebAPI.Repositories.Implementation
 {
@@ -27,14 +29,36 @@ namespace CountryInfo.WebAPI.Repositories.Implementation
             await _dbContext.SaveChangesAsync();
         }
 
-        public Task<IEnumerable<State>> GetAllAsync()
+        public async Task<IEnumerable<State>> FilterBySpecificationAsync(ISpecification<State> criteria)
         {
-            return Task.FromResult(_dbContext.States.AsEnumerable<State>());
+            return await _dbContext.States
+                                    .Where(criteria.ToExpression())
+                                    .ToListAsync();
+        }
+
+        public async Task<IEnumerable<State>> GetAllAsync()
+        {
+            return await _dbContext.States.ToListAsync();
         }
 
         public async Task<State> GetAsync(int id)
         {
             return await _dbContext.States.FindAsync(id);
+        }
+
+        public async Task<int> GetCountAsync()
+        {
+            return await _dbContext.States.CountAsync();
+        }
+
+        public async Task LoadAsync<TProperty>(State entity, System.Linq.Expressions.Expression<Func<State, TProperty>> property) where TProperty : class
+        {
+            await _dbContext.Entry(entity).Reference(property).LoadAsync();
+        }
+
+        public async Task LoadCitiesAsync(State state)
+        {
+            await _dbContext.Entry(state).Collection(s => s.Cities).LoadAsync();
         }
 
         public async Task UpdateAsync(State state)

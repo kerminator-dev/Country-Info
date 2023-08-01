@@ -15,7 +15,22 @@
       "ProjectGuid": "37b74aa1-1126-4f26-913a-89ca286e673f",
       "DisplayName": "ConsoleClient",
       "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "5ee140ab-8284-47a8-9a45-2bd4d4a791ae": {
+      "ProjectGuid": "5ee140ab-8284-47a8-9a45-2bd4d4a791ae",
+      "DisplayName": "CountryInfo.WebAPI",
+      "ColorIndex": 3
+    },
+    "0b51c3de-b8d4-4a33-ab93-13c305ce461d": {
+      "ProjectGuid": "0b51c3de-b8d4-4a33-ab93-13c305ce461d",
+      "DisplayName": "CountryInfo.Shared",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 5
 }

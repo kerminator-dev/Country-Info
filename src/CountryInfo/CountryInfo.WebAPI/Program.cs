@@ -1,6 +1,10 @@
 using CountryInfo.WebAPI.Data;
+using CountryInfo.WebAPI.Profiles;
 using CountryInfo.WebAPI.Repositories.Abstractions;
 using CountryInfo.WebAPI.Repositories.Implementation;
+using CountryInfo.WebAPI.Services.Abstractions;
+using CountryInfo.WebAPI.Services.Implementation;
+using CountryInfo.WebAPI.ValidationStrategies.Implementation;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,9 +20,18 @@ builder.Services.AddDbContext<AppDbContext>
         options.UseSqlite(connectionString);
     }
 );
+
+builder.Services.AddSingleton<PhoneCodeValidationStrategy>();
+builder.Services.AddAutoMapper(typeof(AppMappingProfile));
+
+
 builder.Services.AddScoped<ICountryRepository, DefaultCountryRepository>();
 builder.Services.AddScoped<IStateRepository, DefaultStateRepository>();
 builder.Services.AddScoped<ICityRepository, DefaultCityRepository>();
+
+builder.Services.AddScoped<ICountryService, DefaultCountryService>();
+builder.Services.AddScoped<IStateService, DefaultStateService>();
+builder.Services.AddScoped<ICityService, DefaultCityService>();
 
 var app = builder.Build();
 
@@ -30,7 +43,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// app.UseAuthorization();
+app.UseAuthorization();
 
 app.MapControllers();
 

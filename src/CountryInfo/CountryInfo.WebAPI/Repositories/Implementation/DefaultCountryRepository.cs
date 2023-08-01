@@ -1,6 +1,8 @@
 ﻿using CountryInfo.WebAPI.Data;
 using CountryInfo.WebAPI.Entities;
 using CountryInfo.WebAPI.Repositories.Abstractions;
+using CountryInfo.WebAPI.Specifications.Abstractions;
+using Microsoft.EntityFrameworkCore;
 
 namespace CountryInfo.WebAPI.Repositories.Implementation
 {
@@ -28,14 +30,31 @@ namespace CountryInfo.WebAPI.Repositories.Implementation
             await _dbContext.SaveChangesAsync();
         }
 
-        public Task<IEnumerable<Country>> GetAllAsync()
+        public async Task<IEnumerable<Country>> FilterBySpecificationAsync(ISpecification<Country> criteria)
         {
-            return Task.FromResult(_dbContext.Countries.AsEnumerable<Country>());
+            return await _dbContext.Countries.Where(criteria.ToExpression()).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Country>> GetAllAsync()
+        {
+            return await _dbContext.Countries.ToListAsync<Country>();
         }
 
         public async Task<Country> GetAsync(int id)
         {
             return await _dbContext.Countries.FindAsync(id);
+        }
+
+        public async Task<int> GetCountAsync()
+        {
+            return await _dbContext.Countries.CountAsync();
+        }
+
+
+
+        public async Task LoadStatesAsync(Country country)
+        {
+            await _dbContext.Entry(country).Collection(c => c.States).LoadAsync();
         }
 
         public async Task UpdateAsync(Country country)

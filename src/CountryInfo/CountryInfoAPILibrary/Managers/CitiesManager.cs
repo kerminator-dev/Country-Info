@@ -7,7 +7,7 @@ namespace CountryInfoAPILibrary.Managers
     public class CitiesManager : EntityManager<City>
     {
         public CitiesManager(string apiKey, string baseServerAddress)
-            : base(baseServerAddress, apiKey, controllerName: "Cities") 
+            : base(baseServerAddress, controllerName: "Cities") 
         {
             
         }

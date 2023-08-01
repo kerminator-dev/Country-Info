@@ -1,0 +1,12 @@
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.Shared\bin\Debug\net6.0\CountryInfo.Shared.deps.json
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.Shared\bin\Debug\net6.0\CountryInfo.Shared.dll
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.Shared\bin\Debug\net6.0\ref\CountryInfo.Shared.dll
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.Shared\bin\Debug\net6.0\CountryInfo.Shared.pdb
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.Shared\obj\Debug\net6.0\CountryInfo.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.Shared\obj\Debug\net6.0\CountryInfo.Shared.AssemblyInfoInputs.cache
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.Shared\obj\Debug\net6.0\CountryInfo.Shared.AssemblyInfo.cs
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.Shared\obj\Debug\net6.0\CountryInfo.Shared.csproj.CoreCompileInputs.cache
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.Shared\obj\Debug\net6.0\CountryInfo.Shared.dll
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.Shared\obj\Debug\net6.0\ref\CountryInfo.Shared.dll
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.Shared\obj\Debug\net6.0\CountryInfo.Shared.pdb
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.Shared\obj\Debug\net6.0\CountryInfo.Shared.csproj.AssemblyReference.cache

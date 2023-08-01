@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aFyZkKL8S4YPIYN8D2a967bxoyoPravz2Nuo0dXXf3I=",
+  "Source": "CountryInfo.WebAPI",
+  "BasePath": "_content/CountryInfo.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

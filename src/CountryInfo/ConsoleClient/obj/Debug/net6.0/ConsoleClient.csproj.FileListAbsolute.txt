@@ -17,3 +17,22 @@ D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\ConsoleClient\
 D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\ConsoleClient\obj\Debug\net6.0\ref\ConsoleClient.dll
 D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\ConsoleClient\obj\Debug\net6.0\ConsoleClient.pdb
 D:\Users\525.khokhlovns\Desktop\Новая папка\CountryInfo\ConsoleClient\obj\Debug\net6.0\ConsoleClient.genruntimeconfig.cache
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\bin\Debug\net6.0\ConsoleClient.exe
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\bin\Debug\net6.0\ConsoleClient.deps.json
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\bin\Debug\net6.0\ConsoleClient.runtimeconfig.json
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\bin\Debug\net6.0\ConsoleClient.dll
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\bin\Debug\net6.0\ref\ConsoleClient.dll
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\bin\Debug\net6.0\ConsoleClient.pdb
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\bin\Debug\net6.0\CountryInfoAPILibrary.dll
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\bin\Debug\net6.0\CountryInfoAPILibrary.pdb
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\obj\Debug\net6.0\ConsoleClient.csproj.AssemblyReference.cache
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\obj\Debug\net6.0\ConsoleClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\obj\Debug\net6.0\ConsoleClient.AssemblyInfoInputs.cache
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\obj\Debug\net6.0\ConsoleClient.AssemblyInfo.cs
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\obj\Debug\net6.0\ConsoleClient.csproj.CoreCompileInputs.cache
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\obj\Debug\net6.0\ConsoleClient.csproj.CopyComplete
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\obj\Debug\net6.0\ConsoleClient.dll
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\obj\Debug\net6.0\ref\ConsoleClient.dll
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\obj\Debug\net6.0\ConsoleClient.pdb
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\ConsoleClient\obj\Debug\net6.0\ConsoleClient.genruntimeconfig.cache
