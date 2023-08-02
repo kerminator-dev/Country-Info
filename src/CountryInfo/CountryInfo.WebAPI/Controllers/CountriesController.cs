@@ -1,27 +1,31 @@
-﻿using CountryInfo.WebAPI.Exceptions;
-using CountryInfo.WebAPI.Services.Abstractions;
+﻿using CountryInfo.WebAPI.CQRS.Queries.Countries;
+using CountryInfo.WebAPI.Exceptions;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using CountryInfo.WebAPI.Extensions;
 
 namespace CountryInfo.WebAPI.Controllers
 {
-    [Route("api/[controller]/[action]")]
     [ApiController]
     public class CountriesController : ControllerBase
     {
-        private readonly ICountryService _countrySerivce;
+        private readonly IMediator _mediator;
 
-        public CountriesController(ICountryService countrySerivce)
+        public CountriesController(IMediator mediator)
         {
-            _countrySerivce = countrySerivce;
+            _mediator = mediator;
         }
 
+
         // GET: api/<CountriesController>
-        [HttpGet]
+        [HttpGet("api/Countries/")]
         public async Task<ActionResult> GetAllAsync()
         {
             try
             {
-                var result = await _countrySerivce.GetAllAsync();
+                var query = new GetAllCountriesQuery();
+
+                var result = await _mediator.Send(query);
 
                 return Ok(result);
             }
@@ -35,12 +39,14 @@ namespace CountryInfo.WebAPI.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet("api/Countries/ById")]
         public async Task<ActionResult> GetAsync([FromQuery] int countryId)
         {
             try
             {
-                var result = await _countrySerivce.GetAsync(countryId);
+                var query = new GetCountryByIdQuery(countryId);
+
+                var result = await _mediator.Send(query);
 
                 return Ok(result);
             }
@@ -54,12 +60,14 @@ namespace CountryInfo.WebAPI.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet("api/Countries/ByPhoneCode/")]
         public async Task<ActionResult> GetByPhoneCode([FromQuery] int phoneCode)
         {
             try
             {
-                var result = await _countrySerivce.GetByPhoneCodeAsync(phoneCode);
+                var query = new GetCountriesByPhoneCodeQuery(phoneCode);
+
+                var result = await _mediator.Send(query);
 
                 return Ok(result);
             }
@@ -69,7 +77,7 @@ namespace CountryInfo.WebAPI.Controllers
             }
             catch (WrongPhoneCodeException ex)
             {
-                return NotFound(ex.Message);
+                return BadRequest(ex.Message);
             }
             catch (Exception)
             {
@@ -77,12 +85,14 @@ namespace CountryInfo.WebAPI.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet("api/Countries/Count")]
         public async Task<ActionResult> CountAsync()
         {
             try
             {
-                var result = await _countrySerivce.GetCountAsync();
+                var query = new GetCountOfCountriesQuery();
+
+                var result = await _mediator.Send(query);
 
                 return Ok(result);
             }

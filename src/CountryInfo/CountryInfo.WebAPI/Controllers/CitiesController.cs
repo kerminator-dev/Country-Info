@@ -1,32 +1,34 @@
-﻿using CountryInfo.WebAPI.Exceptions;
-using CountryInfo.WebAPI.Services.Abstractions;
+﻿using CountryInfo.WebAPI.CQRS.Queries.Cities;
+using CountryInfo.WebAPI.Exceptions;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CountryInfo.WebAPI.Controllers
 {
-    [Route("api/[controller]/[action]")]
     [ApiController]
     public class CitiesController : ControllerBase
     {
-        private readonly ICityService _cityService;
+        private readonly IMediator _mediator;
 
-        public CitiesController(ICityService cityService)
+        public CitiesController(IMediator mediator)
         {
-            _cityService = cityService;
+            _mediator = mediator;
         }
 
-        [HttpGet]
+        [HttpGet("api/Cities/")]
         public async Task<ActionResult> GetAsync([FromQuery] int cityId)
         {
             try
             {
-                var result = await _cityService.GetAsync(cityId);
+                var query = new GetCityByIdQuery(cityId);
+
+                var result = await _mediator.Send(query); 
 
                 return Ok(result);
             }
             catch (DataNotFoundException ex)
             {
-                return NotFound(ex);
+                return NotFound(ex.Message);
             }
             catch (Exception)
             {
@@ -34,18 +36,20 @@ namespace CountryInfo.WebAPI.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet("api/Cities/Search/")]
         public async Task<ActionResult> Search([FromQuery] string cityName)
         {
             try
             {
-                var result = await _cityService.Search(cityName);
+                var query = new SearchCitiesQuery(cityName);
+
+                var result = await _mediator.Send(query);
 
                 return Ok(result);
             }
             catch (DataNotFoundException ex)
             {
-                return NotFound(ex);
+                return NotFound(ex.Message);
             }
             catch (Exception)
             {
@@ -53,12 +57,14 @@ namespace CountryInfo.WebAPI.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet("api/Cities/Count")]
         public async Task<ActionResult> CountAsync()
         {
             try
             {
-                var result = await _cityService.GetCountAsync();
+                var query = new GetCountOfCitiesQuery();
+
+                var result = await _mediator.Send(query);
 
                 return Ok(result);
             }

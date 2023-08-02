@@ -45,7 +45,7 @@ namespace CountryInfo.WebAPI.Services.Implementation
             var specification = new CityByCityNameSpecificaion(cityName);
 
             var cities = await _cityRepository.FilterBySpecificationAsync(specification);
-            if (cities == null)
+            if (cities.IsNullOrEmpty())
                 throw new DataNotFoundException();
 
             return cities;

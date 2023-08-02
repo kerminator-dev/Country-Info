@@ -1,27 +1,28 @@
-﻿using CountryInfo.WebAPI.Exceptions;
-using CountryInfo.WebAPI.Services.Abstractions;
+﻿using CountryInfo.WebAPI.CQRS.Queries.States;
+using CountryInfo.WebAPI.Exceptions;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CountryInfo.WebAPI.Controllers
 {
-    [Route("api/[controller]/[action]")]
     [ApiController]
     public class StatesController : ControllerBase
     {
-        private readonly IStateService _stateService;
+        private readonly IMediator _mediator;
 
-        public StatesController(IStateService stateService)
+        public StatesController(IMediator mediator)
         {
-            _stateService = stateService;
+            _mediator = mediator;
         }
 
-
-        [HttpGet]
+        [HttpGet("api/States/")]
         public async Task<ActionResult> GetAsync([FromQuery] int stateId)
         {
             try
             {
-                var result = await _stateService.GetAsync(stateId);
+                var query = new GetStateByIdQuery(stateId);
+
+                var result = await _mediator.Send(query);
 
                 return Ok(result);
             }
@@ -35,12 +36,14 @@ namespace CountryInfo.WebAPI.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet("api/States/Count")]
         public async Task<ActionResult> CountAsync()
         {
             try
             {
-                var result = await _stateService.GetCountAsync();
+                var query = new GetCountOfStatesQuery();
+
+                var result = await _mediator.Send(query);
 
                 return Ok(result);
             }

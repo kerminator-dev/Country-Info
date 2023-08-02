@@ -12,6 +12,7 @@ namespace CountryInfo.WebAPI.ValidationStrategies.Implementation
         public bool IsValid(int value)
         {
             // Можно добавить доп. условия, если сильно захотеть
+            // Проверки на отрицательное значение, мне кажется, будет достаточно
 
             return value >= MIN_PHONE_CODE;
         }

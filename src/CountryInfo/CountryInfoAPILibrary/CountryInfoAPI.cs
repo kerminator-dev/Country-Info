@@ -7,22 +7,22 @@ namespace CountryInfoAPILibrary
         private readonly string _apiKey;
         private readonly string _baseServerAddress;
 
-        private readonly CountriesManager _countriesManager;
-        private readonly StatesManager _statesManager;
-        private readonly CitiesManager _citiesManager;
+        private readonly CountriesApiService _countriesManager;
+        private readonly StatesApiService _statesManager;
+        private readonly CitiesApiService _citiesManager;
 
-        public CountriesManager Countries => _countriesManager;
-        public StatesManager States => _statesManager;
-        public CitiesManager Cities => _citiesManager;
+        public CountriesApiService Countries => _countriesManager;
+        public StatesApiService States => _statesManager;
+        public CitiesApiService Cities => _citiesManager;
 
         public CountryInfoAPI(string baseServerAddress, string apiKey)
         {
             _baseServerAddress = baseServerAddress;
             _apiKey = apiKey;
 
-            _countriesManager = new CountriesManager(apiKey, baseServerAddress);
-            _statesManager = new StatesManager(apiKey, baseServerAddress);
-            _citiesManager = new CitiesManager(apiKey, baseServerAddress);
+            _countriesManager = new CountriesApiService(apiKey, baseServerAddress);
+            _statesManager = new StatesApiService(apiKey, baseServerAddress);
+            _citiesManager = new CitiesApiService(apiKey, baseServerAddress);
         }
     }
 }

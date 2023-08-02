@@ -1,0 +1,1 @@
+﻿Потом может добавлю маппинг Entity в DTO в mediator Handler'ах

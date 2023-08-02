@@ -22,8 +22,7 @@ builder.Services.AddDbContext<AppDbContext>
 );
 
 builder.Services.AddSingleton<PhoneCodeValidationStrategy>();
-builder.Services.AddAutoMapper(typeof(AppMappingProfile));
-
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
 
 builder.Services.AddScoped<ICountryRepository, DefaultCountryRepository>();
 builder.Services.AddScoped<IStateRepository, DefaultStateRepository>();

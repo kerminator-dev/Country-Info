@@ -78,3 +78,5 @@ C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.We
 C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.WebAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.WebAPI\bin\Debug\net6.0\CountryInfo.Shared.dll
 C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.WebAPI\bin\Debug\net6.0\CountryInfo.Shared.pdb
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.WebAPI\bin\Debug\net6.0\MediatR.dll
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.WebAPI\bin\Debug\net6.0\MediatR.Contracts.dll
