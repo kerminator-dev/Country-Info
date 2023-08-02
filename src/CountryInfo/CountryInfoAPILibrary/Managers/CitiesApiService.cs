@@ -4,9 +4,9 @@ using System.Net;
 
 namespace CountryInfoAPILibrary.Managers
 {
-    public class CitiesApiService : EntityManager<City>
+    public class CitiesApiService : BaseApiService<City>
     {
-        public CitiesApiService(string apiKey, string baseServerAddress)
+        public CitiesApiService(string baseServerAddress)
             : base(baseServerAddress, controllerName: "Cities") 
         {
             

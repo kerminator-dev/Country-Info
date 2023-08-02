@@ -1,5 +1,4 @@
 ﻿using CountryInfo.WebAPI.Specifications.Abstractions;
-using System.Linq.Expressions;
 
 namespace CountryInfo.WebAPI.Repositories.Abstractions
 {
@@ -12,6 +11,7 @@ namespace CountryInfo.WebAPI.Repositories.Abstractions
         Task UpdateAsync(TEntity entity);
         Task<int> GetCountAsync();
 
-        Task<IEnumerable<TEntity>> FilterBySpecificationAsync(ISpecification<TEntity> criteria);
+        Task<int> GetCountBySpecificationAsync(ISpecification<TEntity> specification);
+        Task<IEnumerable<TEntity>> FilterBySpecificationAsync(ISpecification<TEntity> specification);
     }
 }

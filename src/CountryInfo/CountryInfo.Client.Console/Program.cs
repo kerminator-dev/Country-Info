@@ -1,22 +1,21 @@
 ﻿using CountryInfoAPILibrary;
 
-CountryInfoAPI API = new CountryInfoAPI
+var apiService = new CountryInfoAPI
 (
-    baseServerAddress: "https://localhost:7046/",
-    apiKey: String.Empty
+    baseServerAddress: "https://localhost:7046/"
 );
 
-var cities = API.Cities.GetAll().Result;
-var city = API.Cities.GetDetail(1).Result;
-var countOfCities = API.Cities.GetCount().Result;
+// var cities = await API.Cities.GetAll();
+var city = await apiService.Cities.GetDetails(1);
+var countOfCities = await apiService.Cities.GetCount();
 
-var countries = API.Countries.GetAll().Result;
-var country = API.Countries.GetDetail(10).Result;
-var countryByPhoneCode = API.Countries.GetByPhoneCode(7).Result;
-var countOfCountries = API.Countries.GetCount().Result;
+var countries = await apiService.Countries.GetAll();
+var country = await apiService.Countries.GetDetails(10);
+var countryByPhoneCode = await apiService.Countries.GetByPhoneCode(7);
+var countOfCountries = await apiService.Countries.GetCount();
 
-var states = API.States.GetAll().Result;
-var state = API.States.GetDetail(1).Result;
-var countOfStates = API.States.GetCount().Result;
+// var states = await API.States.GetAll();
+var state = await apiService.States.GetDetails(1);
+var countOfStates = await apiService.States.GetCount();
 
 Console.WriteLine();

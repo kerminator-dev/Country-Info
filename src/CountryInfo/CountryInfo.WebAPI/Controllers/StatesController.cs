@@ -15,8 +15,8 @@ namespace CountryInfo.WebAPI.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet("api/States/")]
-        public async Task<ActionResult> GetAsync([FromQuery] int stateId)
+        [HttpGet("api/States/{stateId}")]
+        public async Task<ActionResult> GetAsync(int stateId)
         {
             try
             {

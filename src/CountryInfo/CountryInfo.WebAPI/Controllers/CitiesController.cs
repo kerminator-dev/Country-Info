@@ -15,8 +15,8 @@ namespace CountryInfo.WebAPI.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet("api/Cities/")]
-        public async Task<ActionResult> GetAsync([FromQuery] int cityId)
+        [HttpGet("api/Cities/{cityId}")]
+        public async Task<ActionResult> GetAsync(int cityId)
         {
             try
             {
@@ -36,12 +36,12 @@ namespace CountryInfo.WebAPI.Controllers
             }
         }
 
-        [HttpGet("api/Cities/Search/")]
-        public async Task<ActionResult> Search([FromQuery] string cityName)
+        [HttpGet("api/Cities/Search={value}")]
+        public async Task<ActionResult> Search( string value)
         {
             try
             {
-                var query = new SearchCitiesQuery(cityName);
+                var query = new SearchCitiesQuery(value);
 
                 var result = await _mediator.Send(query);
 

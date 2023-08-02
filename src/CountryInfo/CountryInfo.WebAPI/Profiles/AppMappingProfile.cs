@@ -4,7 +4,7 @@ using CountryInfo.WebAPI.Entities;
 
 namespace CountryInfo.WebAPI.Profiles
 {
-    public class AppMappingProfile : Profile
+    public sealed class AppMappingProfile : Profile
     {
         public AppMappingProfile()
         {

@@ -30,9 +30,9 @@ namespace CountryInfo.WebAPI.Repositories.Implementation
             await _dbContext.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<City>> FilterBySpecificationAsync(ISpecification<City> criteria)
+        public async Task<IEnumerable<City>> FilterBySpecificationAsync(ISpecification<City> specification)
         {
-            return await _dbContext.Cities.Where(criteria.ToExpression()).ToListAsync();
+            return await _dbContext.Cities.Where(specification.ToExpression()).ToListAsync();
         }
 
         public async Task<IEnumerable<City>> GetAllAsync()
@@ -48,6 +48,14 @@ namespace CountryInfo.WebAPI.Repositories.Implementation
         public async Task<int> GetCountAsync()
         {
             return await _dbContext.Cities.CountAsync();
+        }
+
+        public async Task<int> GetCountBySpecificationAsync(ISpecification<City> specification)
+        {
+            return await _dbContext
+                         .Cities
+                         .Where(specification.ToExpression())
+                         .CountAsync();
         }
 
         public async Task UpdateAsync(City city)

@@ -39,8 +39,8 @@ namespace CountryInfo.WebAPI.Controllers
             }
         }
 
-        [HttpGet("api/Countries/ById")]
-        public async Task<ActionResult> GetAsync([FromQuery] int countryId)
+        [HttpGet("api/Countries/{countryId}")]
+        public async Task<ActionResult> GetAsync(int countryId)
         {
             try
             {
@@ -60,8 +60,8 @@ namespace CountryInfo.WebAPI.Controllers
             }
         }
 
-        [HttpGet("api/Countries/ByPhoneCode/")]
-        public async Task<ActionResult> GetByPhoneCode([FromQuery] int phoneCode)
+        [HttpGet("api/Countries/PhoneCode={phoneCode}")]
+        public async Task<ActionResult> GetByPhoneCode(int phoneCode)
         {
             try
             {

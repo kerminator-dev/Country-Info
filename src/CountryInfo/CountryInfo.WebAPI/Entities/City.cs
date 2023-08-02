@@ -6,7 +6,7 @@ namespace CountryInfo.WebAPI.Entities
     /// <summary>
     /// Город
     /// </summary>
-    public class City
+    public sealed class City
     {
         [Key]
         [Column("id", Order = 0)]
