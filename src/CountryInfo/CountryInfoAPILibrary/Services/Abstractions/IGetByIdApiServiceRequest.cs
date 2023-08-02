@@ -1,6 +1,6 @@
 ﻿namespace CountryInfoAPILibrary.Services.Abstractions
 {
-    internal interface IGetByIdApiService<TEntity>
+    internal interface IGetByIdApiServiceRequest<TEntity>
     {
         Task<TEntity> GetByIdAsync(int id);
     }
