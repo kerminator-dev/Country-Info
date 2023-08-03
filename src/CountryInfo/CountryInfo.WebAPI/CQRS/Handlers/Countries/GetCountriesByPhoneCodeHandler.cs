@@ -1,6 +1,6 @@
-﻿using CountryInfo.Shared.DTOs.Responses;
+﻿using AutoMapper;
+using CountryInfo.Shared.DTOs.Responses;
 using CountryInfo.WebAPI.CQRS.Queries.Countries;
-using CountryInfo.WebAPI.Entities;
 using CountryInfo.WebAPI.Services.Abstractions;
 using MediatR;
 
@@ -9,23 +9,19 @@ namespace CountryInfo.WebAPI.CQRS.Handlers.Countries
     public class GetCountriesByPhoneCodeHandler : IRequestHandler<GetCountriesByPhoneCodeQuery, IEnumerable<CountryResponseDTO>>
     {
         private readonly ICountryService _countryService;
+        private readonly IMapper _mapper;
 
-        public GetCountriesByPhoneCodeHandler(ICountryService countryService)
+        public GetCountriesByPhoneCodeHandler(ICountryService countryService, IMapper mapper)
         {
             _countryService = countryService;
+            _mapper = mapper;
         }
 
         public async Task<IEnumerable<CountryResponseDTO>> Handle(GetCountriesByPhoneCodeQuery request, CancellationToken cancellationToken)
         {
-            var result = await _countryService.GetByPhoneCodeAsync(request.PhoneCode);
+            var countries = await _countryService.GetByPhoneCodeAsync(request.PhoneCode);
 
-            return result.Select(x => new CountryResponseDTO()
-            {
-                Id = x.Id,
-                Name = x.Name,
-                PhoneCode = x.PhoneCode,
-                ShortName = x.ShortName,
-            });
+            return _mapper.Map<IEnumerable<CountryResponseDTO>>(countries);
         }
     }
 }

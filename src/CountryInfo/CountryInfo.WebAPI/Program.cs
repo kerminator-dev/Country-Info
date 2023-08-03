@@ -6,6 +6,7 @@ using CountryInfo.WebAPI.Services.Abstractions;
 using CountryInfo.WebAPI.Services.Implementation;
 using CountryInfo.WebAPI.ValidationStrategies.Implementation;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +24,7 @@ builder.Services.AddDbContext<AppDbContext>
 
 builder.Services.AddSingleton<PhoneCodeValidationStrategy>();
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
-
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddScoped<ICountryRepository, DefaultCountryRepository>();
 builder.Services.AddScoped<IStateRepository, DefaultStateRepository>();
 builder.Services.AddScoped<ICityRepository, DefaultCityRepository>();
