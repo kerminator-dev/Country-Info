@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CountryInfo.Shared\CountryInfo.Shared.csproj" />
-    <ProjectReference Include="..\CountryInfoAPILibrary\CountryInfoAPILibrary.csproj" />
   </ItemGroup>
 
 </Project>

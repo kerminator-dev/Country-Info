@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "D14V6qozijAWofc6KAZa24f3eYQyjrEIMWkO89EgHzEd0tKq/j1ehURXr8QevfW4NbXkbY/+tjFI0+c0oIG0DA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\525.khokhlovns\\source\\repos\\Country-Info\\src\\CountryInfo\\CountryInfo.ClientApiLibrary\\CountryInfo.ClientApiLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\525.khokhlovns\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

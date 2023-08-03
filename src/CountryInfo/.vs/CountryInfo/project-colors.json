@@ -35,7 +35,12 @@
       "ProjectGuid": "b1de83bc-1487-4900-9c41-1db9614e026a",
       "DisplayName": "CountryInfo.Client.Console",
       "ColorIndex": 5
+    },
+    "8096d527-015e-490b-bec7-1333e485e741": {
+      "ProjectGuid": "8096d527-015e-490b-bec7-1333e485e741",
+      "DisplayName": "CountryInfo.ClientApiLibrary",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 7
 }

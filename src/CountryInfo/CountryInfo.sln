@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryInfoAPILibrary", "CountryInfoAPILibrary\CountryInfoAPILibrary.csproj", "{0BA11F36-F93A-4577-BFAE-91E369A85087}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryInfo.WebAPI", "CountryInfo.WebAPI\CountryInfo.WebAPI.csproj", "{5EE140AB-8284-47A8-9A45-2BD4D4A791AE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryInfo.Shared", "CountryInfo.Shared\CountryInfo.Shared.csproj", "{0B51C3DE-B8D4-4A33-AB93-13C305CE461D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryInfo.Client.Console", "CountryInfo.Client.Console\CountryInfo.Client.Console.csproj", "{B1DE83BC-1487-4900-9C41-1DB9614E026A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountryInfo.Client.Console", "CountryInfo.Client.Console\CountryInfo.Client.Console.csproj", "{B1DE83BC-1487-4900-9C41-1DB9614E026A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryInfo.ClientApiLibrary", "CountryInfo.ClientApiLibrary\CountryInfo.ClientApiLibrary.csproj", "{8096D527-015E-490B-BEC7-1333E485E741}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0BA11F36-F93A-4577-BFAE-91E369A85087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0BA11F36-F93A-4577-BFAE-91E369A85087}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0BA11F36-F93A-4577-BFAE-91E369A85087}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0BA11F36-F93A-4577-BFAE-91E369A85087}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5EE140AB-8284-47A8-9A45-2BD4D4A791AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5EE140AB-8284-47A8-9A45-2BD4D4A791AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EE140AB-8284-47A8-9A45-2BD4D4A791AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{B1DE83BC-1487-4900-9C41-1DB9614E026A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1DE83BC-1487-4900-9C41-1DB9614E026A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1DE83BC-1487-4900-9C41-1DB9614E026A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8096D527-015E-490B-BEC7-1333E485E741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8096D527-015E-490B-BEC7-1333E485E741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8096D527-015E-490B-BEC7-1333E485E741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8096D527-015E-490B-BEC7-1333E485E741}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

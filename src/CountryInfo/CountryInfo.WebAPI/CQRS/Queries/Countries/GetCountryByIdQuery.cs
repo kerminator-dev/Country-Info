@@ -1,9 +1,10 @@
-﻿using CountryInfo.WebAPI.Entities;
+﻿using CountryInfo.Shared.DTOs.Responses;
+using CountryInfo.WebAPI.Entities;
 using MediatR;
 
 namespace CountryInfo.WebAPI.CQRS.Queries.Countries
 {
-    public class GetCountryByIdQuery : IRequest<Country>
+    public class GetCountryByIdQuery : IRequest<CountryWithStatesResponseDTO>
     {
         public int CountryId { get; set; }
 

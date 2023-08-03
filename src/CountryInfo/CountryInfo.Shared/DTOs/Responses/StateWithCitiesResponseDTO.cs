@@ -6,8 +6,6 @@
 
         public string Name { get; set; }
 
-        public int CountryId { get; set; }
-
-        public virtual ICollection<CityResponseDTO> Cities { get; set; }
+        public virtual IEnumerable<CityResponseDTO> Cities { get; set; }
     }
 }

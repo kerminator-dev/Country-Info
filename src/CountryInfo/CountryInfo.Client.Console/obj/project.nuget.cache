@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GEYr3JBIslOCq3AThR3VcEYPzR+AHs17nW2/gZ8LIpETxytH7CzQuZv267kAGX/I9jHtfi8hVT9UA7l/W43V6g==",
+  "dgSpecHash": "bgNsQVb0arSLUuE/2xkeE8mzsYr3oEKsfw7rr59Ip6CZlGo8LspxyTGbOX/SZS/FwN4ZyX3/20YAwtBN33TBcQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Country-Info\\src\\CountryInfo\\CountryInfo.Client.Console\\CountryInfo.Client.Console.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\525.khokhlovns\\source\\repos\\Country-Info\\src\\CountryInfo\\CountryInfo.Client.Console\\CountryInfo.Client.Console.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

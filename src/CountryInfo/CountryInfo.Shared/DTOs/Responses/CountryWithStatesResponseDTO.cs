@@ -10,6 +10,6 @@
 
         public int PhoneCode { get; set; }
 
-        public virtual ICollection<StateResponseDTO> States { get; set; }
+        public virtual IEnumerable<StateResponseDTO> States { get; set; }
     }
 }

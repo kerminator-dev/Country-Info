@@ -1,0 +1,5 @@
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.ClientApiLibrary\obj\Debug\net6.0\CountryInfo.ClientApiLibrary.csproj.AssemblyReference.cache
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.ClientApiLibrary\obj\Debug\net6.0\CountryInfo.ClientApiLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.ClientApiLibrary\obj\Debug\net6.0\CountryInfo.ClientApiLibrary.AssemblyInfoInputs.cache
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.ClientApiLibrary\obj\Debug\net6.0\CountryInfo.ClientApiLibrary.AssemblyInfo.cs
+C:\Users\525.khokhlovns\source\repos\Country-Info\src\CountryInfo\CountryInfo.ClientApiLibrary\obj\Debug\net6.0\CountryInfo.ClientApiLibrary.csproj.CoreCompileInputs.cache
