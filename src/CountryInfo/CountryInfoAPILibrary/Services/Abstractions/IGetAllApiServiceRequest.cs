@@ -2,6 +2,10 @@
 {
     internal interface IGetAllApiServiceRequest<TResponse>
     {
-        Task<TResponse> GetAllAsync();
+        /// <summary>
+        /// Получить список всех объектов типа <typeparamref name="T"/>
+        /// </summary>
+        /// <returns>Список всех объектов типа <typeparamref name="T"/></returns>
+        Task<IEnumerable<TResponse>> GetAllAsync();
     }
 }

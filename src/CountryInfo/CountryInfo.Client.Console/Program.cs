@@ -1,6 +1,6 @@
 ﻿using CountryInfoAPILibrary;
 
-var apiService = new CountryInfoAPI
+var apiService = new CountryInfoFacade
 (
     baseServerAddress: "https://localhost:7046/"
 );
@@ -14,7 +14,7 @@ var country = await apiService.Countries.GetDetails(10);
 var countryByPhoneCode = await apiService.Countries.GetByPhoneCode(7);
 var countOfCountries = await apiService.Countries.GetCount();
 
-// var states = await API.States.GetAll();
+//var states = await API.States.GetAll();
 var state = await apiService.States.GetDetails(1);
 var countOfStates = await apiService.States.GetCount();
 
