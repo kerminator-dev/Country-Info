@@ -22,7 +22,7 @@
 ## API-Методы:
 - Данные о странах:
   - /api/Countries/All                      - список всех стран
-  - /api/Countries/Detail/{country_id}      - детальная данные о стране с id {country_id}, включает список штатов страны
+  - /api/Countries/{country_id}      - детальная данные о стране с id {country_id}, включает список штатов страны
   - /api/Countries/PhoneCode/{phone_code}   - список стран с телефонным кодом {phone_code}
   - /api/Countries/Count                    - общее количество стран
 
@@ -33,10 +33,11 @@
 
 - Данные о городах
   - /api/Cities/All                         - список всех городов
-  - /api/Cities/Detail/{city_id}            - детальные данные о городе с id {city_id}
+  - /api/Cities/{city_id}                   - детальные данные о городе с id {city_id}
+  - /api/Cities/Search={value}              - поиск городов
   - /api/Cities/Count                       - общее количество городов
 
-## Модели:
+## Модели БД
 Страна:
   ```cs
   public class Country
@@ -94,28 +95,23 @@
   
 ## Пример использования:
 ```cs
-using CountryInfoAPILibrary;
-using CountryInfoAPILibrary.Models;
+using CountryInfo.ClientApiLibrary;
+using CountryInfo.Shared.DTOs.Responses;
 
-// Инициализация 
-var api = new CountryInfoAPI
+var apiService = new CountryInfoApiService
 (
-    baseServerAddress: "https://localhost:7046/",
-    apiKey: String.Empty
+    baseServerAddress: "https://localhost:7046/"
 );
 
 Console.Write("Введите код телефона: ");
 
 if (int.TryParse(Console.ReadLine(), out int phoneCode))
 {
-    // Обращение к API-методу /api/Countries/PhoneCode/{phoneCode} 
-    // и получение результата - списка стран с указанным кодом телефона
-    Responce<IReadOnlyList<Country>> responce = api.Countries.GetByPhoneCode(phoneCode);
+    IEnumerable<CountryResponseDTO> countries = await apiService.Countries.GetByPhoneCodeAsync(phoneCode);
 
-    if (responce.HasResult)
+    if (countries.Any())
     {
-        // Вывод списка полученных стран с указанным кодом телефона
-        foreach (var country in responce.Result)
+        foreach (var country in countries)
             Console.WriteLine($"Страна с кодом +{phoneCode}: {country.Name} ({country.ShortName})");
     }
     else
@@ -124,7 +120,6 @@ if (int.TryParse(Console.ReadLine(), out int phoneCode))
         return;
     }
 }
-
 Console.Read();
 ```
 ![alt text](https://github.com/kerminator-dev/Country-Info/blob/main/img/console-example.PNG?raw=true)
