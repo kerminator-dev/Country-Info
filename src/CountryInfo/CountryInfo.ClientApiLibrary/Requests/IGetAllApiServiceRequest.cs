@@ -1,6 +1,6 @@
-﻿namespace CountryInfo.ClientApiLibrary.Services.Abstractions
+﻿namespace CountryInfo.ClientApiLibrary.Requests
 {
-    internal interface IGetAllApiServiceRequest<TResponse>
+    public interface IGetAllApiServiceRequest<TResponse>
     {
         /// <summary>
         /// Получить список всех объектов типа <typeparamref name="T"/>

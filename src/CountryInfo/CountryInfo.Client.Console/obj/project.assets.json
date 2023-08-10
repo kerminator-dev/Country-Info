@@ -2,6 +2,33 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CountryInfo.ClientApiLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CountryInfo.Shared": "1.0.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/CountryInfo.ClientApiLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CountryInfo.ClientApiLibrary.dll": {}
+        }
+      },
       "CountryInfo.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -15,6 +42,38 @@
     }
   },
   "libraries": {
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "CountryInfo.ClientApiLibrary/1.0.0": {
+      "type": "project",
+      "path": "../CountryInfo.ClientApiLibrary/CountryInfo.ClientApiLibrary.csproj",
+      "msbuildProject": "../CountryInfo.ClientApiLibrary/CountryInfo.ClientApiLibrary.csproj"
+    },
     "CountryInfo.Shared/1.0.0": {
       "type": "project",
       "path": "../CountryInfo.Shared/CountryInfo.Shared.csproj",
@@ -23,23 +82,29 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CountryInfo.ClientApiLibrary >= 1.0.0",
       "CountryInfo.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\525.khokhlovns\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\525.khokhlovns\\source\\repos\\Country-Info\\src\\CountryInfo\\CountryInfo.Client.Console\\CountryInfo.Client.Console.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Country-Info\\src\\CountryInfo\\CountryInfo.Client.Console\\CountryInfo.Client.Console.csproj",
       "projectName": "CountryInfo.Client.Console",
-      "projectPath": "C:\\Users\\525.khokhlovns\\source\\repos\\Country-Info\\src\\CountryInfo\\CountryInfo.Client.Console\\CountryInfo.Client.Console.csproj",
-      "packagesPath": "C:\\Users\\525.khokhlovns\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\525.khokhlovns\\source\\repos\\Country-Info\\src\\CountryInfo\\CountryInfo.Client.Console\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Country-Info\\src\\CountryInfo\\CountryInfo.Client.Console\\CountryInfo.Client.Console.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Country-Info\\src\\CountryInfo\\CountryInfo.Client.Console\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\525.khokhlovns\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -47,14 +112,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\525.khokhlovns\\source\\repos\\Country-Info\\src\\CountryInfo\\CountryInfo.Shared\\CountryInfo.Shared.csproj": {
-              "projectPath": "C:\\Users\\525.khokhlovns\\source\\repos\\Country-Info\\src\\CountryInfo\\CountryInfo.Shared\\CountryInfo.Shared.csproj"
+            "C:\\Users\\Admin\\Desktop\\Country-Info\\src\\CountryInfo\\CountryInfo.ClientApiLibrary\\CountryInfo.ClientApiLibrary.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Country-Info\\src\\CountryInfo\\CountryInfo.ClientApiLibrary\\CountryInfo.ClientApiLibrary.csproj"
+            },
+            "C:\\Users\\Admin\\Desktop\\Country-Info\\src\\CountryInfo\\CountryInfo.Shared\\CountryInfo.Shared.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Country-Info\\src\\CountryInfo\\CountryInfo.Shared\\CountryInfo.Shared.csproj"
             }
           }
         }
@@ -74,7 +143,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -83,7 +153,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "CountryInfo.Client.Console/1.0.0": {
         "dependencies": {
-          "CountryInfo.Shared": "1.0.0",
-          "CountryInfoAPILibrary": "1.0.0"
+          "CountryInfo.ClientApiLibrary": "1.0.0",
+          "CountryInfo.Shared": "1.0.0"
         },
         "runtime": {
           "CountryInfo.Client.Console.dll": {}
@@ -23,17 +23,18 @@
           }
         }
       },
-      "CountryInfo.Shared/1.0.0": {
-        "runtime": {
-          "CountryInfo.Shared.dll": {}
-        }
-      },
-      "CountryInfoAPILibrary/1.0.0": {
+      "CountryInfo.ClientApiLibrary/1.0.0": {
         "dependencies": {
+          "CountryInfo.Shared": "1.0.0",
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
-          "CountryInfoAPILibrary.dll": {}
+          "CountryInfo.ClientApiLibrary.dll": {}
+        }
+      },
+      "CountryInfo.Shared/1.0.0": {
+        "runtime": {
+          "CountryInfo.Shared.dll": {}
         }
       }
     }
@@ -51,12 +52,12 @@
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
-    "CountryInfo.Shared/1.0.0": {
+    "CountryInfo.ClientApiLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "CountryInfoAPILibrary/1.0.0": {
+    "CountryInfo.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

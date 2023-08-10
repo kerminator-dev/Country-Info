@@ -5,10 +5,14 @@
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "CountryInfo.Shared/1.0.0": {
@@ -64,19 +68,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\525.khokhlovns\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\525.khokhlovns\\source\\repos\\Country-Info\\src\\CountryInfo\\CountryInfo.ClientApiLibrary\\CountryInfo.ClientApiLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Country-Info\\src\\CountryInfo\\CountryInfo.ClientApiLibrary\\CountryInfo.ClientApiLibrary.csproj",
       "projectName": "CountryInfo.ClientApiLibrary",
-      "projectPath": "C:\\Users\\525.khokhlovns\\source\\repos\\Country-Info\\src\\CountryInfo\\CountryInfo.ClientApiLibrary\\CountryInfo.ClientApiLibrary.csproj",
-      "packagesPath": "C:\\Users\\525.khokhlovns\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\525.khokhlovns\\source\\repos\\Country-Info\\src\\CountryInfo\\CountryInfo.ClientApiLibrary\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Country-Info\\src\\CountryInfo\\CountryInfo.ClientApiLibrary\\CountryInfo.ClientApiLibrary.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Country-Info\\src\\CountryInfo\\CountryInfo.ClientApiLibrary\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\525.khokhlovns\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -84,14 +93,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\525.khokhlovns\\source\\repos\\Country-Info\\src\\CountryInfo\\CountryInfo.Shared\\CountryInfo.Shared.csproj": {
-              "projectPath": "C:\\Users\\525.khokhlovns\\source\\repos\\Country-Info\\src\\CountryInfo\\CountryInfo.Shared\\CountryInfo.Shared.csproj"
+            "C:\\Users\\Admin\\Desktop\\Country-Info\\src\\CountryInfo\\CountryInfo.Shared\\CountryInfo.Shared.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Country-Info\\src\\CountryInfo\\CountryInfo.Shared\\CountryInfo.Shared.csproj"
             }
           }
         }
@@ -117,7 +127,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -126,7 +137,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
