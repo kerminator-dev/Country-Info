@@ -10,8 +10,6 @@
    - Specification
 - <a href="https://github.com/kerminator-dev/Country-Info/tree/main/src/CountryInfo/CountryInfoAPILibrary">Библиотека классов для удобного взаимодействия с Country Info API</a>
 
-  - Реализованы паттерны:
-   - Facade
 - <a href="https://github.com/kerminator-dev/Country-Info/tree/main/src/CountryInfo/ConsoleClient">Консольный клиент, использующий библиотеку классов</a>
 
 ## Country Info API - API-интерфейс, предоставляющий данные о:

@@ -5,7 +5,7 @@ namespace CountryInfo.WebAPI.ValidationStrategies.Implementation
     /// <summary>
     /// Проверка на длину кода страны
     /// </summary>
-    public class PhoneCodeValidationStrategy : IValidationStrategy<int>
+    public class CountryPhoneCodeValidationStrategy : IValidationStrategy<int>
     {
         private const int MIN_PHONE_CODE = 0;
 

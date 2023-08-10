@@ -13,9 +13,9 @@ namespace CountryInfo.WebAPI.Services.Implementation
     public class DefaultCountryService : ICountryService
     {
         private readonly ICountryRepository _countryRepository;
-        private readonly PhoneCodeValidationStrategy _phoneCodeValidationStrategy;
+        private readonly CountryPhoneCodeValidationStrategy _phoneCodeValidationStrategy;
 
-        public DefaultCountryService(ICountryRepository countryRepository, PhoneCodeValidationStrategy phoneCodeValidationStrategy)
+        public DefaultCountryService(ICountryRepository countryRepository, CountryPhoneCodeValidationStrategy phoneCodeValidationStrategy)
         {
             _countryRepository = countryRepository;
             _phoneCodeValidationStrategy = phoneCodeValidationStrategy;

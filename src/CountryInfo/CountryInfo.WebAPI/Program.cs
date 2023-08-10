@@ -22,7 +22,7 @@ builder.Services.AddDbContext<AppDbContext>
     }
 );
 
-builder.Services.AddSingleton<PhoneCodeValidationStrategy>();
+builder.Services.AddSingleton<CountryPhoneCodeValidationStrategy>();
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 builder.Services.AddScoped<ICountryRepository, DefaultCountryRepository>();
