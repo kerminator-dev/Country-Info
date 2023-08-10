@@ -3,11 +3,11 @@
 ## Репозиторий включает:
 - <a href="https://github.com/kerminator-dev/Country-Info/tree/main/src/CountryInfo/CountryInfo.WebAPI">ASP.NET Web Api</a>
 
-  - Реализованы паттерны: 
-   - Repository
-   - CQRS
-   - Strategy
-   - Specification
+  Основа: 
+   - Repository Pattern
+   - CQRS Pattern
+   - Specification Pattern
+   - AutoMapper
 - <a href="https://github.com/kerminator-dev/Country-Info/tree/main/src/CountryInfo/CountryInfo.ClientApiLibrary">Библиотека классов для удобного взаимодействия с Web Api</a>
 
 - <a href="https://github.com/kerminator-dev/Country-Info/tree/main/src/CountryInfo/CountryInfo.Client.Console">Консольный клиент, использующий библиотеку классов</a>
